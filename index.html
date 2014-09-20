@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="kittenator">
+<head>
+  <meta charset="UTF-8">
+  <title>kittenator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="KittenController">
+  <div class="wrapper">
+    <h1>The Kittenator! <button ng-click="loadMore()">Load Moar Kittens!</button></h1>
+
+    <div class="container">
+      <img ng-repeat="kitten in kittens" class="kitten-img" ng-src="{{kitten}}" alt="kitten">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
